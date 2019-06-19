@@ -1,0 +1,11 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<label for="mmm">message</label><br>
+<input type="" name="mmm" [(ngModel)]="message">
+<app-child [msg]="message" (count)="count = $event"></app-child>
+<app-child [msg]="'msg num 1'" (count)="count = $event"></app-child>
+<app-child [msg]="'msg num 2'" (count)="count = $event"></app-child>
+<app-son></app-son>
+<h3>{{app.count}}</h3>
