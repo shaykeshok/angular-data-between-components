@@ -1,0 +1,9 @@
+<label>
+  Name:
+  <input type="text" [formControl]="name">
+</label>
+<button (click)="print(name.value)">send</button>
+<p>
+  Value: {{ name.value }}
+</p>
+{{name.valid}}
